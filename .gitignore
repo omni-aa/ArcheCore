@@ -73,4 +73,8 @@ crashlytics-build.properties
 
 # Ignore Bin files
 /[Bb]in/
+# JetBrains 
+/.idea/*
+!/.idea/codeStyles/
+!/.idea/inspectionProfiles/
 
