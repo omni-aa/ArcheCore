@@ -1,0 +1,24 @@
+ INFO RestDatabaseClient [2025-01-26 19:42:59] - Reading config file from ./Config/serverConfig.json
+ INFO RestDatabaseClient [2025-01-26 19:42:59] - Found config file
+ INFO DatabaseUserLoginSetup [2025-01-26 19:42:59] - `UserLoginManager` not setup yet, Get it in children to setup...
+ INFO DatabaseUserLoginSetup [2025-01-26 19:42:59] - `UserLoginManager` not setup yet, Use default one...
+ INFO DatabaseUserLoginSetup [2025-01-26 19:42:59] - `UserLoginManager` not setup yet, Get it in children to setup...
+ INFO DatabaseUserLoginSetup [2025-01-26 19:42:59] - `UserLoginManager` not setup yet, Use default one...
+ INFO No Tag [2025-01-26 19:42:59] - [DevExt] GameInstance - LoadedGameData
+ INFO GameInstance [2025-01-26 19:42:59] - [IAP_INIT]: Initialized without purchasing
+ INFO MapNetworkManager(MapNetworkManager) [2025-01-26 19:42:59] - OnStartServer
+ INFO DatabaseNetworkManager(DatabaseNetworkManager) [2025-01-26 19:42:59] - OnStartClient
+ INFO DatabaseNetworkManager(DatabaseNetworkManager)->LiteNetLibClient [2025-01-26 19:42:59] - OnClientConnected
+ INFO MapNetworkManager(MapNetworkManager) [2025-01-26 19:43:00] - Spawning warp portals
+ INFO MapNetworkManager(MapNetworkManager) [2025-01-26 19:43:00] - Spawning NPCs
+ INFO MapNetworkManager(MapNetworkManager) [2025-01-26 19:43:00] - Spawning monsters
+ INFO MapNetworkManager(MapNetworkManager) [2025-01-26 19:43:00] - Spawning harvestables
+ INFO MapNetworkManager(MapNetworkManager) [2025-01-26 19:43:00] - Spawning item drop entities
+ INFO ClusterClient:MapServer [2025-01-26 19:43:00] - Starting server
+ INFO ClusterClient:MapServer [2025-01-26 19:43:00] - Connecting to Cluster Server: 127.0.0.1:6010
+ INFO ClusterClient:MapServer [2025-01-26 19:43:00] - OnClientConnected
+ INFO ClusterClient:MapServer [2025-01-26 19:43:00] - Connected to Cluster Server
+ INFO ClusterClient:MapServer [2025-01-26 19:43:00] - App Register is requesting
+ INFO MapNetworkManager(MapNetworkManager) [2025-01-26 19:43:00] - Register map server: Map002
+ INFO ClusterClient:MapServer [2025-01-26 19:43:00] - App Registered successfully
+ INFO MapNetworkManager(MapNetworkManager) [2025-01-26 19:43:01] - Register map server: Map001

@@ -1,0 +1,1 @@
+"ArcheCore.exe" -startMapSpawnServer -spawnExePath "D:\Game Development\Unity Projects\ArcheCore\Bin\ServerFiles\1.0.0.0\ArcheCore.exe" -startCentralServer -startChatServer -startDatabaseServer 

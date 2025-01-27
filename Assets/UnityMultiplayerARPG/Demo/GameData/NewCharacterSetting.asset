@@ -36,8 +36,6 @@ MonoBehaviour:
     amount: 1
   - item: {fileID: 11400000, guid: 4519d6286cf69b142ac9894ff8e06a31, type: 2}
     amount: 1
-  - item: {fileID: 11400000, guid: 0df782e70d43dc54d8a6bc2d6a212f89, type: 2}
-    amount: 99
   - item: {fileID: 11400000, guid: 2d57e318a4843d64d8d3924124b94368, type: 2}
     amount: 25
   - item: {fileID: 11400000, guid: e4e881cff53fe054f830d67ad95dd3d0, type: 2}
@@ -45,8 +43,6 @@ MonoBehaviour:
   - item: {fileID: 11400000, guid: 05fd047386612f342aa61c5ddcf274d1, type: 2}
     amount: 25
   - item: {fileID: 11400000, guid: f0ba2e9ab5115a74184f1805934e122d, type: 2}
-    amount: 25
-  - item: {fileID: 11400000, guid: 0a439d3c316c36f4cae03a253c8839d4, type: 2}
     amount: 25
   - item: {fileID: 11400000, guid: 4896d19f8423d0a4d9d8a4c055531694, type: 2}
     amount: 1
@@ -68,18 +64,8 @@ MonoBehaviour:
     amount: 25
   - item: {fileID: 11400000, guid: 75570e9520eae274da93b3f64e5930eb, type: 2}
     amount: 25
-  - item: {fileID: 11400000, guid: 84eba039ed32fda4693c20ebba14c822, type: 2}
-    amount: 999
   - item: {fileID: 11400000, guid: 6a844357d966b924ea30ae8d473e030a, type: 2}
     amount: 999
-  - item: {fileID: 11400000, guid: effa88bea19e7fe4babaf64ec0c771a2, type: 2}
-    amount: 999
-  - item: {fileID: 11400000, guid: c4f83999d394a4c4cbd65dc4e44885df, type: 2}
-    amount: 1
-  - item: {fileID: 11400000, guid: df61cc539bfb0d94aa82ffac5bd01724, type: 2}
-    amount: 2
-  - item: {fileID: 11400000, guid: cef25d7570c129340a039818a8fca7c6, type: 2}
-    amount: 1
   - item: {fileID: 11400000, guid: 8cd5dd5a92938384984839b652edf203, type: 2}
     amount: 1
   - item: {fileID: 11400000, guid: 77e595407b0920e47b26996f042b758d, type: 2}
@@ -94,10 +80,6 @@ MonoBehaviour:
     amount: 99
   - item: {fileID: 11400000, guid: 526ec951a3646104eabc7ed548e89726, type: 2}
     amount: 99
-  - item: {fileID: 11400000, guid: cb8adb55fb513f54fa8d9b619540d1d4, type: 2}
-    amount: 99
-  - item: {fileID: 11400000, guid: 71c16926d2dc33343ab0727be3d5341e, type: 2}
-    amount: 99
   - item: {fileID: 11400000, guid: 52d2c6fb152031542b7798e45c786553, type: 2}
     amount: 25
   - item: {fileID: 11400000, guid: c66ef51ae8805aa47bb9fa26bcf2109c, type: 2}
@@ -106,13 +88,3 @@ MonoBehaviour:
     amount: 3
   - item: {fileID: 11400000, guid: 059ee12639a33394d82a780f32475fa5, type: 2}
     amount: 25
-  - item: {fileID: 11400000, guid: 73198fdebc1903c47bbe6a47a92c4275, type: 2}
-    amount: 1
-  - item: {fileID: 11400000, guid: 73198fdebc1903c47bbe6a47a92c4275, type: 2}
-    amount: 1
-  - item: {fileID: 11400000, guid: 73198fdebc1903c47bbe6a47a92c4275, type: 2}
-    amount: 1
-  - item: {fileID: 11400000, guid: 73198fdebc1903c47bbe6a47a92c4275, type: 2}
-    amount: 1
-  - item: {fileID: 11400000, guid: 73198fdebc1903c47bbe6a47a92c4275, type: 2}
-    amount: 1

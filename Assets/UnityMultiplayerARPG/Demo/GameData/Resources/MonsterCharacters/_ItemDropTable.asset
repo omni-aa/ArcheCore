@@ -57,15 +57,7 @@ MonoBehaviour:
     minAmount: 0
     maxAmount: 1
     dropRate: 0.1
-  - item: {fileID: 11400000, guid: 0df782e70d43dc54d8a6bc2d6a212f89, type: 2}
-    minAmount: 0
-    maxAmount: 5
-    dropRate: 0.1
   - item: {fileID: 11400000, guid: f0ba2e9ab5115a74184f1805934e122d, type: 2}
-    minAmount: 0
-    maxAmount: 5
-    dropRate: 0.1
-  - item: {fileID: 11400000, guid: 0a439d3c316c36f4cae03a253c8839d4, type: 2}
     minAmount: 0
     maxAmount: 5
     dropRate: 0.1

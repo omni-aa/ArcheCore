@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 24
-  productGUID: 00000000000000000000000000000000
+  productGUID: 4a6fa846608575d488da7d55988f2ba0
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -817,7 +817,7 @@ PlayerSettings:
   cloudProjectId: 3b5d679a-343a-44a4-a577-551b473141ef
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: AS-MMORPG-KIT
+  projectName: ArcheCore 2025-01-26_18-21-31
   organizationId: aidanali65
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 1

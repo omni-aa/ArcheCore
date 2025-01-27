@@ -1489,47 +1489,57 @@ namespace MultiplayerARPG
 
         #region Drop Item Functions
         public void OnClickDrop()
-        {
-            // Only unequipped equipment can be dropped
-            if (!IsOwningCharacter() || InventoryType != InventoryType.NonEquipItems || GameInstance.PlayingCharacterEntity == null)
-                return;
+{
+    // Only unequipped equipment can be dropped
+    if (!IsOwningCharacter() || InventoryType != InventoryType.NonEquipItems || GameInstance.PlayingCharacterEntity == null)
+        return;
 
-            switch (GameInstance.Singleton.playerDropItemMode)
+    switch (GameInstance.Singleton.playerDropItemMode)
+    {
+        case PlayerDropItemMode.DestroyItem:
+            if (CharacterItem.amount == 1)
             {
-                case PlayerDropItemMode.DestroyItem:
-                    if (CharacterItem.amount == 1)
-                    {
-                        UISceneGlobal.Singleton.ShowMessageDialog(
-                            LanguageManager.GetText(UITextKeys.UI_DESTROY_ITEM.ToString()),
-                            LanguageManager.GetText(UITextKeys.UI_DESTROY_ITEM_DESCRIPTION.ToString()),
-                            false, true, true, false, null, () =>
-                            {
-                                OnDropAmountConfirmed(1);
-                            });
-                    }
-                    else
-                    {
-                        UISceneGlobal.Singleton.ShowInputDialog(
-                            LanguageManager.GetText(UITextKeys.UI_DESTROY_ITEM.ToString()),
-                            LanguageManager.GetText(UITextKeys.UI_DESTROY_ITEM_DESCRIPTION.ToString()),
-                            OnDropAmountConfirmed, 1, CharacterItem.amount, CharacterItem.amount);
-                    }
-                    break;
-                case PlayerDropItemMode.DropOnGround:
-                    if (CharacterItem.amount == 1)
+                UISceneGlobal.Singleton.ShowMessageDialog(
+                    LanguageManager.GetText(UITextKeys.UI_DESTROY_ITEM.ToString()),
+                    LanguageManager.GetText(UITextKeys.UI_DESTROY_ITEM_DESCRIPTION.ToString()),
+                    false, true, true, false, null, () =>
                     {
                         OnDropAmountConfirmed(1);
-                    }
-                    else
-                    {
-                        UISceneGlobal.Singleton.ShowInputDialog(
-                            LanguageManager.GetText(UITextKeys.UI_DROP_ITEM.ToString()),
-                            LanguageManager.GetText(UITextKeys.UI_DROP_ITEM_DESCRIPTION.ToString()),
-                            OnDropAmountConfirmed, 1, CharacterItem.amount, CharacterItem.amount);
-                    }
-                    break;
+                    });
             }
-        }
+            else
+            {
+                UISceneGlobal.Singleton.ShowInputDialog(
+                    LanguageManager.GetText(UITextKeys.UI_DESTROY_ITEM.ToString()),
+                    LanguageManager.GetText(UITextKeys.UI_DESTROY_ITEM_DESCRIPTION.ToString()),
+                    OnDropAmountConfirmed, 1, CharacterItem.amount, CharacterItem.amount);
+            }
+            break;
+        case PlayerDropItemMode.DropOnGround:
+            // If the mode is DropOnGround, but you want to ensure it doesn't drop, you can either:
+            // 1. Skip the drop logic entirely, or
+            // 2. Redirect to the destroy logic
+            // Here, I'm redirecting to the destroy logic
+            if (CharacterItem.amount == 1)
+            {
+                UISceneGlobal.Singleton.ShowMessageDialog(
+                    LanguageManager.GetText(UITextKeys.UI_DESTROY_ITEM.ToString()),
+                    LanguageManager.GetText(UITextKeys.UI_DESTROY_ITEM_DESCRIPTION.ToString()),
+                    false, true, true, false, null, () =>
+                    {
+                        OnDropAmountConfirmed(1);
+                    });
+            }
+            else
+            {
+                UISceneGlobal.Singleton.ShowInputDialog(
+                    LanguageManager.GetText(UITextKeys.UI_DESTROY_ITEM.ToString()),
+                    LanguageManager.GetText(UITextKeys.UI_DESTROY_ITEM_DESCRIPTION.ToString()),
+                    OnDropAmountConfirmed, 1, CharacterItem.amount, CharacterItem.amount);
+            }
+            break;
+    }
+}
 
         private void OnDropAmountConfirmed(int amount)
         {
